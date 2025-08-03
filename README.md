@@ -54,14 +54,6 @@ This command guides you through creating a nested command, allowing you to selec
 ```bash
 fixsense make:cli
 ```
-? Current path: ''. Select or create where to save the action: >> Create a new entry
-? Enter the name for the new entry: user
-? Current path: 'user'. Select or create where to save the action: >> Create a new entry
-? Enter the name for the new entry: create
-? Current path: 'user:create'. Select or create where to save the action: >> Finish path here
-? Enter a short description: Creates a new user in the database.
-? Enter the JavaScript code for the fix: [Editor Opens]
-```
 
 ### 2. `record <session-name>`
 Start a monitored shell session to automatically record a sequence of **shell commands**.
@@ -77,9 +69,6 @@ fixsense record fix-docker-cache
 (fixsense) $ exit
 
 # After exiting, FixSense will ask you to save the recorded commands.
-? Do you want to save these commands as a fix? Yes
-? Current path: ''. Select or create where to save the action: docker
-...
 ```
 
 ### 3. `list`
@@ -88,11 +77,6 @@ Interactively explore your saved commands in a drill-down menu. This is the best
 **Example:**
 ```bash
 fixsense list
-```
-? Explore commands inside 'root':
-> db (Category & Action)
-  docker (Category)
-  Exit
 ```
 
 ### 4. `find <keyword>`
@@ -104,7 +88,6 @@ fixsense find docker
 ```
 Found 1 matching command(s) for 'docker':
   - docker:fix-docker-cache
-```
 
 ### 5. `show <commandName>`
 Display the details (description, code, or steps) for a specific command without running it.
@@ -119,7 +102,6 @@ Type: Shell Commands
 Steps:
   1. docker system prune -a
   2. docker builder prune
-```
 
 ### 6. `edit <commandName>`
 Edit the description or code/steps of an existing command. The prompts will be pre-filled with the current data.
@@ -137,7 +119,6 @@ Permanently delete a command. It will ask for confirmation first to prevent acci
 fixsense delete user:create
 ```
 ? Are you sure you want to permanently delete the command 'user:create'? (y/N)
-```
 
 ---
 

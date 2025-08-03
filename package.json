@@ -1,0 +1,40 @@
+{
+  "name": "fixsense-cli",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "bin": {
+    "fixsense": "./bin/fixsense"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "cli",
+    "developer-tools",
+    "productivity",
+    "automation",
+    "snippets",
+    "command-line",
+    "fixsense",
+    "fixsense-cli"
+  ],
+  "author": "Himu336",
+  "homepage": "https://github.com/Himu336/fixsense-cli",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Himu336/fixsense-cli/issues"
+  },
+  "description": "A powerful CLI assistant to record, save, and reuse command-line fixes and code snippets.",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^14.0.0",
+    "inquirer": "^8.2.6"
+  },
+  "devDependencies": {
+    "eslint": "^9.32.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.3",
+    "jest": "^30.0.5",
+    "prettier": "^3.6.2"
+  }
+}

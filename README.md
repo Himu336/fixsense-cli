@@ -85,9 +85,10 @@ Quickly search for any command by a keyword.
 **Example:**
 ```bash
 fixsense find docker
-```
+
 Found 1 matching command(s) for 'docker':
   - docker:fix-docker-cache
+```
 
 ### 5. `show <commandName>`
 Display the details (description, code, or steps) for a specific command without running it.
@@ -95,13 +96,14 @@ Display the details (description, code, or steps) for a specific command without
 **Example:**
 ```bash
 fixsense show docker:fix-docker-cache
-```
+
 --- Details for docker:fix-docker-cache ---
 Description: Clears all docker cache.
 Type: Shell Commands
 Steps:
   1. docker system prune -a
-  2. docker builder prune
+  2. docker builder 
+  ```
 
 ### 6. `edit <commandName>`
 Edit the description or code/steps of an existing command. The prompts will be pre-filled with the current data.
@@ -117,9 +119,8 @@ Permanently delete a command. It will ask for confirmation first to prevent acci
 **Example:**
 ```bash
 fixsense delete user:create
-```
 ? Are you sure you want to permanently delete the command 'user:create'? (y/N)
-
+```
 ---
 
 ## License
